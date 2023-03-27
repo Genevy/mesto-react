@@ -4,16 +4,16 @@
 
 <br>
 <p align="center">
-Фронтенд проекта <a href="https://github.com/Genevy/mesto#readme">Mesto</a> на React.
+Фронтенд проекта <a href="https://github.com/genevy/mesto#readme">Mesto</a> на React.
 <br>
 <br>
-Место — адаптивный, интерактивный сайт-сервис для добавления фотографий достопримечательностей и знаковых мест. В проекте была применена работа с макетом <a href="https://www.figma.com/file/2cn9N9jSkmxD84oJik7xL7/JavaScript.-Sprint-4?node-id=0%3A1&t=eb2h3YUth7WrGziJ-0">Figma</a>, построение сложных сеток, разширенные возможности HTML и CSS с применением объектно-ориентированного программирование JS.
+Место — адаптивный, интерактивный сайт-сервис для добавления фотографий достопримечательностей и знаковых мест. В проекте была применена работа с макетом <a href="https://www.figma.com/file/2cn9N9jSkmxD84oJik7xL7/JavaScript.-Sprint-4?node-id=0%3A1&t=eb2h3YUth7WrGziJ-0">Figma</a>, построение сложных сеток, разширенные возможности HTML и CSS с использованием JavaScript библиотеки React JS.
 </p>
 <br>
 <p align="center">🔎 Explore on <a href="https://genevy.github.io/mesto-react/"><strong>GitHub Pages »</strong></a></p>
 <br>
 <a href="https://genevy.github.io/mesto-react/">
-  <img src="https://raw.githubusercontent.com/Genevy/mesto/main/src/images/mesto.png" alt="Иллюстрация к проекту Место" width="100%">
+  <img src="https://raw.githubusercontent.com/genevy/mesto/main/src/images/mesto.png" alt="Иллюстрация к проекту Место" width="100%">
 </a>
 
 ### 🚀 Функционал

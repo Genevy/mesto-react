@@ -13,7 +13,7 @@
 <p align="center">🔎 Explore on <a href="https://genevy.github.io/mesto-react/"><strong>GitHub Pages »</strong></a></p>
 <br>
 <a href="https://genevy.github.io/mesto-react/">
-  <img src="https://raw.githubusercontent.com/genevy/mesto/main/src/images/mesto.png" alt="Иллюстрация к проекту Место" width="100%">
+  <img src="https://raw.githubusercontent.com/genevy/mesto-react/main/src/images/mesto-react.png" alt="Иллюстрация к проекту Место на React" width="100%">
 </a>
 
 ### 🚀 Функционал

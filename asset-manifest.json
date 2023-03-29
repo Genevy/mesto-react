@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/genevy/mesto-react/static/css/main.68d1db08.css",
+    "main.js": "/genevy/mesto-react/static/js/main.f6620b7f.js",
+    "static/js/787.5530211c.chunk.js": "/genevy/mesto-react/static/js/787.5530211c.chunk.js",
+    "static/media/Inter-500.woff": "/genevy/mesto-react/static/media/Inter-500.9053572c46aeb4b16caa.woff",
+    "static/media/inter-900.woff": "/genevy/mesto-react/static/media/inter-900.6f3f8d238cb5ec6a7884.woff",
+    "static/media/inter-400.woff": "/genevy/mesto-react/static/media/inter-400.a252fc44cf11fd602874.woff",
+    "static/media/Inter-500.woff2": "/genevy/mesto-react/static/media/Inter-500.293fd13dbca5a3e450ef.woff2",
+    "static/media/inter-900.woff2": "/genevy/mesto-react/static/media/inter-900.769f5bb9abd2e78ec82b.woff2",
+    "static/media/inter-400.woff2": "/genevy/mesto-react/static/media/inter-400.7c370fde6764d889efe6.woff2",
+    "static/media/logo.svg": "/genevy/mesto-react/static/media/logo.03b78ada3425e9132ff3db7ea8f4a6f6.svg",
+    "static/media/like.svg": "/genevy/mesto-react/static/media/like.7913ddfd147a48616b09.svg",
+    "index.html": "/genevy/mesto-react/index.html",
+    "static/media/recycle_bin.svg": "/genevy/mesto-react/static/media/recycle_bin.823b0cf1b0b7e9cb7cad.svg",
+    "static/media/like_active.svg": "/genevy/mesto-react/static/media/like_active.e787eeb70bb65b7b453a.svg",
+    "static/media/edit_button.svg": "/genevy/mesto-react/static/media/edit_button.8667ac4a523e8fc42e59.svg",
+    "static/media/pencil.svg": "/genevy/mesto-react/static/media/pencil.a086f758840ae814ecde.svg",
+    "static/media/close_icon.svg": "/genevy/mesto-react/static/media/close_icon.2ceb783afbab75916ddc.svg",
+    "static/media/add_button.svg": "/genevy/mesto-react/static/media/add_button.d86bb2edc2f6eadb96b7.svg",
+    "main.68d1db08.css.map": "/genevy/mesto-react/static/css/main.68d1db08.css.map",
+    "main.f6620b7f.js.map": "/genevy/mesto-react/static/js/main.f6620b7f.js.map",
+    "787.5530211c.chunk.js.map": "/genevy/mesto-react/static/js/787.5530211c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.68d1db08.css",
+    "static/js/main.f6620b7f.js"
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mesto-react/static/css/main.5601ca4e.css",
-    "main.js": "/mesto-react/static/js/main.f6f83834.js",
+    "main.js": "/mesto-react/static/js/main.6c26007e.js",
     "static/js/787.5530211c.chunk.js": "/mesto-react/static/js/787.5530211c.chunk.js",
     "static/media/Inter-500.woff": "/mesto-react/static/media/Inter-500.9053572c46aeb4b16caa.woff",
     "static/media/inter-900.woff": "/mesto-react/static/media/inter-900.6f3f8d238cb5ec6a7884.woff",
@@ -10,8 +10,7 @@
     "static/media/inter-900.woff2": "/mesto-react/static/media/inter-900.769f5bb9abd2e78ec82b.woff2",
     "static/media/inter-400.woff2": "/mesto-react/static/media/inter-400.7c370fde6764d889efe6.woff2",
     "static/media/logo.svg": "/mesto-react/static/media/logo.bbe2a6eafac19c3d031c272c424875ca.svg",
-    "static/media/placeholder.webp": "/mesto-react/static/media/placeholder.436c80f835dcc3a453a9.webp",
-    "static/media/placeholder.svg": "/mesto-react/static/media/placeholder.b8c47929d93ab126d73a724ab9902b96.svg",
+    "static/media/placeholder.svg": "/mesto-react/static/media/placeholder.eaf1c536885de217b3dc332efcae9269.svg",
     "static/media/like.svg": "/mesto-react/static/media/like.0e390048c288271ab07f.svg",
     "index.html": "/mesto-react/index.html",
     "static/media/recycle_bin.svg": "/mesto-react/static/media/recycle_bin.ce3b64935accf9b8212e.svg",
@@ -21,11 +20,11 @@
     "static/media/close_icon.svg": "/mesto-react/static/media/close_icon.039f1f5203f653b4bacd.svg",
     "static/media/add_button.svg": "/mesto-react/static/media/add_button.bed8c136e13907f5eefb.svg",
     "main.5601ca4e.css.map": "/mesto-react/static/css/main.5601ca4e.css.map",
-    "main.f6f83834.js.map": "/mesto-react/static/js/main.f6f83834.js.map",
+    "main.6c26007e.js.map": "/mesto-react/static/js/main.6c26007e.js.map",
     "787.5530211c.chunk.js.map": "/mesto-react/static/js/787.5530211c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5601ca4e.css",
-    "static/js/main.f6f83834.js"
+    "static/js/main.6c26007e.js"
   ]
 }

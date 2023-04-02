@@ -1,6 +1,7 @@
 import React from 'react';
 import api from '../utils/Api';
 import Card from './Card';
+import avatarPlaceholder from '../images/avatar_placeholder.svg';
 
 function Main(props) {
   const { onEditProfile, onAddPlace, onEditAvatar, onCardClick } = props;
@@ -24,12 +25,18 @@ function Main(props) {
       .catch((err) => { console.log(err) })
   }, [])
 
+   /* Заглушка на изображение профиля с битой ссылкой */
+   function avatarOnError(event)  { 
+    event.currentTarget.src = avatarPlaceholder;
+    event.currentTarget.alt = "Изображение профиля не загружено";
+  }
+
   return (
     <main className="content">
       <section className="profile">
         <div className="profile__container">
           <div className="profile__avatar" onClick={onEditAvatar}>
-            <img src={userAvatar} className="profile__image" alt="Изображение профиля" />
+            <img src={userAvatar} className="profile__image" alt="Изображение профиля" onError={avatarOnError} />
           </div>
           <div className="profile__info">
             <h1 className="profile__name">{userName}</h1>

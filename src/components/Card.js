@@ -1,15 +1,25 @@
 import React from "react";
+import cardPlaceholder from '../images/placeholder.svg';
 
-function Card(props) {
-  const { card, onCardClick } = props;
+
+function Card({ card, onCardClick }) { 
   
   function handleCardClick() {
     onCardClick(card);
   }
+  
+  /* Добавляем заглушку на картинку с битой ссылкой */
+  function handlerImageOnError(event)  { 
+    event.currentTarget.src = cardPlaceholder;
+    event.currentTarget.alt = "Картика не загружена";
+
+    event.currentTarget.name = card.name;
+    card.name = "Не загружена"; 
+  }
 
   return (
     <li className="card" aria-label={card.name}>
-      <img className="card__photo" src={card.link} alt={card.name}  onClick={handleCardClick} />
+      <img loading="lazy" className="card__photo" src={card.link} alt={card.name} onClick={handleCardClick} onError={handlerImageOnError} />
       <div className="card__container-area">
         <div className="card__container">
           <h2 className="card__title">{card.name}</h2>

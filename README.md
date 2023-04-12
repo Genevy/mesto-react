@@ -34,6 +34,11 @@
   * React JS
   * Webpack
   * API `POST`, `GET`, `PUT`, `DELETE`, `PATCH`
+### 🛠 Моддинг
+  * Добавление события onError для пользовательский изображений.
+  * Улучшение UX закрытия модальных окон.
+  * Добавление валидации форм.
+  * [Create Backend](https://github.com/genevy/mesto-react-#readme).
 ##
 ####
 © Developed by [Evgeny Striganov](https://github.com/genevy)

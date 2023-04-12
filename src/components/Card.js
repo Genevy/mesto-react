@@ -1,35 +1,46 @@
 import React from "react";
-import cardPlaceholder from '../images/placeholder.svg';
+import { CurrentUserContext } from "../contexts/CurrentUserContext";
 
+function Card(props) {
+  const { card, onCardClick, onCardLike, onCardDelete } = props;
 
-function Card({ card, onCardClick }) { 
-  
+  const currentUser = React.useContext(CurrentUserContext);
+
+  /* Определить, являемся ли мы владельцем текущей карточки*/
+  const isOwn = card.owner._id === currentUser._id;
+  /* Переменная для className кнопки удаления карточки */
+  const cardRecycleBinClassName = (`card__recycle-bin ${isOwn ? 'card__recycle-bin_visible' : ''}`);
+
+  /* Определить, есть ли у карточки лайк, поставленный текущим пользователем */
+  const isLiked = card.likes.some(i => i._id === currentUser._id);
+  /* Переменная для className кнопки лайка карточки */
+  const cardButtonLikeClassName = (`card__button-like ${isLiked ? 'card__button-like_active' : ''}`);
+
   function handleCardClick() {
     onCardClick(card);
   }
-  
-  /* Добавляем заглушку на картинку с битой ссылкой */
-  function handlerImageOnError(event)  { 
-    event.currentTarget.src = cardPlaceholder;
-    event.currentTarget.alt = "Картика не загружена";
 
-    event.currentTarget.name = card.name;
-    card.name = "Не загружена"; 
+  function handleCardLike() {
+    onCardLike(card);
+  }
+
+  function handleCardDelete() {
+    onCardDelete(card);
   }
 
   return (
     <li className="card" aria-label={card.name}>
-      <img loading="lazy" className="card__photo" src={card.link} alt={card.name} onClick={handleCardClick} onError={handlerImageOnError} />
+      <img loading="lazy" className="card__photo" src={card.link} alt={card.name} onClick={handleCardClick} />
       <div className="card__container-area">
         <div className="card__container">
           <h2 className="card__title">{card.name}</h2>
           <div className="card__like-container">
-            <button className="card__button-like" type="button" aria-label="Нравится"></button>
+            <button className={cardButtonLikeClassName} type="button" aria-label="Нравится" onClick={handleCardLike} ></button>
             <span className="card__like-counter">{card.likes.length}</span>
           </div>
         </div>
       </div>
-      <button className="card__recycle-bin" type="button" aria-label="Удалить"></button>
+      <button className={cardRecycleBinClassName} type="button" aria-label="Удалить" onClick={handleCardDelete}></button>
     </li>
   );
 }

@@ -25,23 +25,34 @@ class Api {
   }
 
   /* Редактировать профиль */
-  updateUserInfo(data) {
+  updateUserInfo({ name, about }) {
     return fetch(`${this._url}/users/me`,
       {
         method: 'PATCH',
         headers: this._headers,
-        body: JSON.stringify({ name: data.name, about: data.about })
+        body: JSON.stringify({ name, about })
+      })
+      .then(this._handleReply)
+  }
+
+  /* Обновить аватар */
+  updateUserAvatar({ avatar }) {
+    return fetch(`${this._url}/users/me/avatar`,
+      {
+        headers: this._headers,
+        method: 'PATCH',
+        body: JSON.stringify({ avatar })
       })
       .then(this._handleReply)
   }
 
   /* Добавить новую карточку */
-  addNewCard(cardData) {
+  addNewCard({ name, link }) {
     return fetch(`${this._url}/cards`,
       {
         method: 'POST',
         headers: this._headers,
-        body: JSON.stringify({ name: cardData.name, link: cardData.link })
+        body: JSON.stringify({ name, link })
       })
       .then(this._handleReply)
   }
@@ -56,35 +67,23 @@ class Api {
       .then(this._handleReply)
   }
 
-  /* Поставить лайк */
-  setLike(id) {
-    return fetch(`${this._url}/cards/${id}/likes`,
-      {
-        method: 'PUT',
-        headers: this._headers
-      })
-      .then(this._handleReply)
-  }
-
-  /* Удалить лайк */
-  deleteLike(id) {
-    return fetch(`${this._url}/cards/${id}/likes`,
-      {
-        method: 'DELETE',
-        headers: this._headers
-      })
-      .then(this._handleReply)
-  }
-
-  /* Обновить аватар */
-  updateUserAvatar({ avatar }) {
-    return fetch(`${this._url}/users/me/avatar`,
-      {
-        headers: this._headers,
-        method: 'PATCH',
-        body: JSON.stringify({ avatar })
-      })
-      .then(this._handleReply)
+  /* Добавить и удалить лайк */
+  changeLikeCardStatus(id, isLiked) {
+    if (isLiked) {
+      return fetch(`${this._url}/cards/${id}/likes`,
+        {
+          method: 'PUT',
+          headers: this._headers,
+        })
+        .then(this._handleReply)
+    } else {
+      return fetch(`${this._url}/cards/${id}/likes`,
+        {
+          method: 'DELETE',
+          headers: this._headers,
+        })
+        .then(this._handleReply)
+    }
   }
 }
 

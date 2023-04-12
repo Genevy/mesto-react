@@ -9,8 +9,11 @@
   background-position: center;
   background-repeat: no-repeat;
   position: absolute;
+  visibility: hidden;
+  filter: drop-shadow(0 0 10px #000);
   top: 20px;
-  right: 15px;
+  right: 20px;
+  transition: all .3s linear;
 }
 
 .card__recycle-bin:hover {

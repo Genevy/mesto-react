@@ -41,4 +41,4 @@
   * [Create Backend »](https://github.com/genevy/express-mesto-gha#readme)
 ##
 ####
-© Developed by [Evgeny Striganov](https://github.com/genevy)
+© Developed by [Evgeny Striganov](https://github.com/genevy) feat. [Yandex Praktikum](https://practicum.yandex.ru/web/)

@@ -1,18 +1,25 @@
 import React from 'react';
 import Card from './Card';
 import { CurrentUserContext } from '../contexts/CurrentUserContext';
+import profilePlaceholderImage from '../images/avatar_placeholder.svg';
 
 function Main(props) {
   const { onEditProfile, onAddPlace, onEditAvatar, onCardClick, onCardLike, onCardDelete, cards } = props;
 
   const currentUser = React.useContext(CurrentUserContext);
 
+  /* Обработка ошибки загрузки изображения профиля: onError */
+  function handleProfileImageOnError(e)  { 
+    e.currentTarget.src = profilePlaceholderImage;
+    e.currentTarget.alt = 'Картика профиля не загружена';
+  }
+
   return (
     <main className="content">
       <section className="profile">
         <div className="profile__container">
           <div className="profile__avatar" onClick={onEditAvatar}>
-            <img loading="lazy" className="profile__image" src={currentUser.avatar} alt="Изображение профиля" />
+            <img loading="lazy" className="profile__image" src={currentUser.avatar} alt="Изображение профиля" onError={handleProfileImageOnError} />
           </div>
           <div className="profile__info">
             <h1 className="profile__name">{currentUser.name}</h1>

@@ -1,5 +1,6 @@
 import React from "react";
 import { CurrentUserContext } from "../contexts/CurrentUserContext";
+import cardPlaceholderImage from '../images/placeholder.svg';
 
 function Card(props) {
   const { card, onCardClick, onCardLike, onCardDelete } = props;
@@ -16,6 +17,14 @@ function Card(props) {
   /* Переменная для className кнопки лайка карточки */
   const cardButtonLikeClassName = (`card__button-like ${isLiked ? 'card__button-like_active' : ''}`);
 
+  /* Обработка ошибки загрузки изображения карточки: onError */
+  function handleCardImageOnError(e)  { 
+    e.currentTarget.src = cardPlaceholderImage;
+    e.currentTarget.alt = 'Картика не загружена';
+    e.currentTarget.name = card.name;
+    card.name = 'Не загружена';
+  }
+
   function handleCardClick() {
     onCardClick(card);
   }
@@ -30,7 +39,7 @@ function Card(props) {
 
   return (
     <li className="card" aria-label={card.name}>
-      <img loading="lazy" className="card__photo" src={card.link} alt={card.name} onClick={handleCardClick} />
+      <img loading="lazy" className="card__photo" src={card.link} alt={card.name} onClick={handleCardClick} onError={handleCardImageOnError} />
       <div className="card__container-area">
         <div className="card__container">
           <h2 className="card__title">{card.name}</h2>

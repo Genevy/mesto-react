@@ -38,7 +38,7 @@
   * ~~Добавление события onError для пользовательский изображений~~ (реализовано).
   * Улучшение UX закрытия модальных окон.
   * Добавление валидации форм.
-  * [Create Backend »](https://github.com/genevy/express-mesto-gha#readme)
+  * [Create Backend »](https://github.com/genevy/react-mesto-auth#readme)
 ##
 ####
 © Developed by [Evgeny Striganov](https://github.com/genevy) feat. [Yandex Praktikum](https://practicum.yandex.ru/web/)

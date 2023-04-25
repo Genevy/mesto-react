@@ -35,10 +35,10 @@
   * Webpack
   * API `POST`, `GET`, `PUT`, `DELETE`, `PATCH`
 ### 🛠 Моддинг
-  * ~~Добавление события onError для пользовательский изображений~~ (реализовано).
+  ☑️ Добавление события onError для пользовательский изображений (реализовано).
   * Улучшение UX закрытия модальных окон.
   * Добавление валидации форм.
   * Добавление функций: [Регистрация и Авторизация пользователя »](https://github.com/genevy/react-mesto-auth#readme)
 ##
 ####
-© Developed by [Evgeny Striganov](https://github.com/genevy) feat. [Yandex Praktikum](https://practicum.yandex.ru/web/)
+© Developed by [Evgeny Striganov](https://github.com/genevy) jointly [Yandex Praktikum](https://practicum.yandex.ru/web/)
